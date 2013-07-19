@@ -21,18 +21,18 @@ var liNodes = [];
     return liNodes.length;
 }
 
-function loopScroll() {
+function loopScrollAlertCount() {
 
     old = curr;
     curr = scrollListAndReturnPos();
 
-    if(curr==old) {
+    if(curr == old) {
         clearInterval(refreshIntervalId);
 
         alert(countList());
 
         return;
-       }
+    }
 }
 
 function main() {
@@ -40,5 +40,5 @@ function main() {
     old = 0;
     curr = scrollListAndReturnPos();
 
-    refreshIntervalId = setInterval(loopScroll, 1000);
+    refreshIntervalId = setInterval(loopScrollAlertCount, 1000);
 }
