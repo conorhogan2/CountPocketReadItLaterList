@@ -1,9 +1,9 @@
 function scrollListAndReturnPos() {
 
-    x = 0;
+    x;
     vert = document.height;
 
-    window.scroll(x,vert);
+    window.scroll(x, vert);
 
     return vert;
 }
