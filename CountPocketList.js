@@ -1,6 +1,6 @@
 function scrollListAndReturnPos() {
 
-    x;
+    var x;
     vert = document.height;
 
     window.scroll(x, vert);
